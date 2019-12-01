@@ -1,0 +1,13 @@
+@font-face {
+    font-family: KaushanScript;
+    src: url('./fonts/KaushanScript-Regular.otf');
+}
+
+$primary-color: rgb(94, 0, 58);
+
+body {
+    min-height: 100vh;
+    background: $primary-color;
+    color: white;
+    font-family: KaushanScript;
+}
