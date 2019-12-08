@@ -1,13 +1,31 @@
-@font-face {
-    font-family: KaushanScript;
-    src: url('./fonts/KaushanScript-Regular.otf');
+@import "button";
+@import "keyboard";
+@import "input";
+@import "constants";
+
+html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-$primary-color: rgb(94, 0, 58);
-
 body {
-    min-height: 100vh;
-    background: $primary-color;
-    color: white;
-    font-family: KaushanScript;
+    background-color: $primary-color;
+    color: $accent-color;
+    font-family: $font-main;
+    padding: $base-unit * 2;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; 
+}
+
+.app-header {
+    text-align: center;
+    margin: 0;
 }

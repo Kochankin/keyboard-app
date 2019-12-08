@@ -1,0 +1,8 @@
+@import "constants";
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-gap: $base-unit;
+    justify-items: stretch;
+}

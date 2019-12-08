@@ -1,0 +1,55 @@
+@import "constants";
+
+$button-size: $base-unit * 7;
+
+.button {
+  font-family: $font-main;
+  color: $primary-color;
+  font-weight: bold;
+  font-size: $base-unit * 2.5;
+  height: $button-size;
+  border-radius: $base-unit;
+  transition: box-shadow 0.15s ease-out;
+  grid-area: span 2 / span 2;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    box-shadow: 0 0 $base-unit $shadow-color;
+  }
+
+  &.pressed {
+    background: $complementary-color;
+    border: $complementary-color;
+    color: $accent-color;
+    outline: none;
+  }
+
+    &.caps-lk-on {
+        box-shadow: 0 0 $base-unit * 2 $shadow-color;
+    }
+}
+
+
+
+
+.button--one-and-half-width {
+    grid-area: span 2 / span 3;
+}
+
+.button--double-width {
+    grid-area: span 2 / span 4;
+}
+
+.button--double-and-half-width {
+    grid-area: span 2 / span 5;
+}
+
+.button--triple-width {
+    grid-area: span 2 / span 6;
+}
+
+.button--quartile-width {
+    grid-area: span 2 / span 8;
+}
+

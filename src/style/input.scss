@@ -1,0 +1,18 @@
+@import "constants";
+
+.input {
+    flex-grow: 1;
+    background-color: $accent-color;
+    border-radius: $base-unit;
+    margin: $base-unit * 3 0;
+    font-family: $font-main;
+    color: $primary-color;
+    font-size: $base-unit * 3.5;
+    padding: $base-unit;
+    outline: none;
+
+    &:focus{
+        outline: none;
+        box-shadow: 0 0 $base-unit * 2 $shadow-color;
+    }
+}
