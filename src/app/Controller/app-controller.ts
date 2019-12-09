@@ -51,7 +51,7 @@ export class AppController {
     }
 
     public keydownHandler(event: KeyboardEvent): void {
-        const targetButton = this._keyboardController.model.findButton(event.code);
+        const targetButton = this._keyboardController.findButton(event.code);
         if (!targetButton) { return; }        
 
         const targetButtonController = this._buttonsControllers.find(ctrl => ctrl.model === targetButton);
@@ -85,7 +85,7 @@ export class AppController {
     }
 
     public keyupHandler(event: KeyboardEvent): void {
-        const targetButton = this._keyboardController.model.findButton(event.code);
+        const targetButton = this._keyboardController.findButton(event.code);
         if (!targetButton) { return; }
 
         const targetButtonController = this._buttonsControllers.find(ctrl => ctrl.model === targetButton);

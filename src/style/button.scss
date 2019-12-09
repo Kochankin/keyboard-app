@@ -1,12 +1,10 @@
 @import "constants";
 
-$button-size: $base-unit * 7;
-
 .button {
   font-family: $font-main;
   color: $primary-color;
   font-weight: bold;
-  font-size: $base-unit * 2.5;
+  font-size: $button-font-size;
   height: $button-size;
   border-radius: $base-unit;
   transition: box-shadow 0.15s ease-out;
@@ -29,9 +27,6 @@ $button-size: $base-unit * 7;
         box-shadow: 0 0 $base-unit * 2 $shadow-color;
     }
 }
-
-
-
 
 .button--one-and-half-width {
     grid-area: span 2 / span 3;

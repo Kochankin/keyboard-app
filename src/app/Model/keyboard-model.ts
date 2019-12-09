@@ -29,7 +29,7 @@ export class KeyboardModel {
     public get input(): InputModel {
         return this._input;
     }
-    //#regionend 
+    //#endregion 
 
     constructor(
         buttons: ButtonModel[], 

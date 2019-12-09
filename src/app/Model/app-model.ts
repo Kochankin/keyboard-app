@@ -2,7 +2,6 @@ import { BehaviorSubject } from "rxjs";
 import { Language } from "../interfaces/button";
 
 export class AppModel {
-     //#region properties
      private _currentLang$: BehaviorSubject<Language>;
      public get currentLang$(): BehaviorSubject<Language> {
          return this._currentLang$;
@@ -17,7 +16,6 @@ export class AppModel {
      public get isCapsLock$(): BehaviorSubject<boolean> {
          return this._isCapsLock$;
      }
-     //#regionend 
 
      constructor(
         currentLang: Language, 

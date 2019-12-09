@@ -62,7 +62,7 @@ export class ButtonModel {
     };
   };
 
-  //#regionend
+  //#endregion
 
   constructor(
     proto: IButtonProto,

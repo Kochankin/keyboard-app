@@ -14,6 +14,10 @@ export class InputModel {
     }
 
     public print(char: string): void {
+        if (char === ' ' && this._inputValue.split('').pop() === ' '){
+            return;
+        }
+        
         this._inputValue += char; 
     }
 
